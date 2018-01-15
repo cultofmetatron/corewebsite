@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-   yeaa
   </div>
 </template>
 

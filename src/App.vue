@@ -1,20 +1,8 @@
 <template>
-
   <div id="app">
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Primary title
-          </h1>
-          <h2 class="subtitle">
-            Primary subtitles
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
+    <top-nav />
+    <div class="container level">
+      <hero />
       <router-view/>
     </div>
 
@@ -22,18 +10,20 @@
 </template>
 
 <script>
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+
 export default {
+  components: {
+    'hero': Hero,
+    'top-nav': Navbar
+  },
   name: 'App'
 };
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
