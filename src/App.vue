@@ -2,8 +2,9 @@
   <div id="app">
     <top-nav />
     <div class="container level">
-      <hero />
-      <router-view/>
+      <hero>
+        <router-view slot="right-side" />
+      </hero>
     </div>
 
   </div>
@@ -23,7 +24,4 @@ export default {
 </script>
 
 <style>
-#app {
-
-}
 </style>

@@ -9,7 +9,7 @@
       <div class="media">
         <div class="media-content">
           <p class="title is-4">{{fullName}}</p>
-          <p class="subtitle is-6"><a href="https://twitter.com/cultofmetatron">@ {{twitter}}</a></p>
+          <p class="subtitle is-6"><a href="https://twitter.com/cultofmetatron">@{{twitter}}</a></p>
         </div>
       </div>
       <div class="content">
@@ -24,9 +24,9 @@ export default {
   data () {
     return {
       fullName: 'Peter de Croos',
-      twitter: 'cultofmetatron',
+      twitter: 'Cultofmetatron',
       blurb: `
-        some stuff about me
+        Engineer, Staff spinner, Intrepid Adventurer
       `
     };
   }

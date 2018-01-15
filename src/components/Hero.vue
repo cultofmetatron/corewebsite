@@ -1,20 +1,25 @@
 <template>
-  <section class="container">
+  <section class="container top-spacer">
     <div class="columns">
       <div class="column">
         <hero-card />
       </div>
       <div class="column">
-        <p>{{aboutMe}}</p>
+        <slot name="right-side"></slot>
       </div>
     </div>
   </section>
 </template>
+
 <style>
 
 img.profile-image {
   border: 1px solid rgb(0, 41, 128);
   box-shadow: 2px 2px 10px rgb(0, 41, 128);
+}
+
+section.container.top-spacer {
+  margin-top: 20px;
 }
 
 </style>
