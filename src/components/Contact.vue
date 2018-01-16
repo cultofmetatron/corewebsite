@@ -53,9 +53,9 @@
         </div>
       </div>
 
-      <div class="field is-grouped">
+      <div class="field">
         <div class="control">
-          <button class="button is-link is-large">Submit</button>
+          <button class="button is-link is-large is-fullwidth">Submit</button>
         </div>
       </div>
 
