@@ -5,11 +5,11 @@
       Need someone to help you realize your mvp or solution to scale your business?
       I'm always interested in new projects.
     </p>
-    <form>
+    <form v-on:submit="pushForm">
 
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-large" type="text" placeholder="Name">
+          <input class="input is-large" type="text" v-model="firstName" placeholder="Name">
           <span class="icon is-medium is-left">
             <icon name="user"></icon>
           </span>
@@ -21,7 +21,7 @@
 
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-large" type="email" placeholder="Email">
+          <input class="input is-large" type="email" v-model="email" placeholder="Email">
           <span class="icon is-medium is-left">
             <icon name="envelope"></icon>
           </span>
@@ -34,7 +34,7 @@
       <div class="field has-addons has-addons-left is-large">
         <p class="control">
           <span class="select is-large">
-            <select class="is-large">
+            <select class="is-large" v-model="currency">
               <option>$</option>
               <option>£</option>
               <option>€</option>
@@ -42,14 +42,14 @@
           </span>
         </p>
         <p class="control">
-          <input class="input is-large" type="text" placeholder="Budget">
+          <input class="input is-large" type="number" v-model="budget" placeholder="Budget">
         </p>
       </div>
 
       <div class="field">
         <label class="label">Tell me a Bit about your project</label>
         <div class="control">
-          <textarea class="textarea is-large" placeholder="Textarea"></textarea>
+          <textarea required class="textarea is-large" v-model="summary" placeholder="Textarea"></textarea>
         </div>
       </div>
 
@@ -78,8 +78,19 @@ p {
 </style>
 <script>
 export default {
+  methods: {
+    pushForm (ev) {
+      console.log(this.firstName);
+    }
+  },
   data () {
-    return {};
+    return {
+      firstName: '',
+      email: '',
+      budget: '',
+      summary: '',
+      currency: 'usd'
+    };
   }
 };
 </script>
