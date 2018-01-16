@@ -3,7 +3,7 @@
     <h1>Hi! I'm Peter,</h1>
     <h2>a software engineer for hire</h2>
     <p>
-      I've in software startups in silicon valley for the past 5 years and recently moved on to freelance fulltime.
+      I've in software startups in silicon valley for the past 5 years and now freelance fulltime.
       I've built mvps using <a href="https://nodejs.org/en/" target="_blank">nodejs</a> and <a href="https://elixir-lang.github.io/" target="_blank">elixir</a> with frontend experience in
       <a href="http://backbonejs.org/" target="_blank">backbone</a> all the way to <a href="https://reactjs.org/" target="_blank">react</a> and <a href="https://vuejs.org/" target="_blank">vue</a>.
     </p>
