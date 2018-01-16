@@ -10,7 +10,9 @@ import 'buefy/lib/buefy.css';
 
 Vue.config.productionTip = false;
 
-Vue.use(Buefy);
+Vue.use(Buefy, {
+  defaultIconPack: 'fa'
+});
 Vue.component('icon', Icon);
 
 /* eslint-disable no-new */

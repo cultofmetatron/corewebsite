@@ -7,12 +7,17 @@
       I've built mvps using <a href="https://nodejs.org/en/" target="_blank">nodejs</a> and <a href="https://elixir-lang.github.io/" target="_blank">elixir</a> with frontend experience in
       <a href="http://backbonejs.org/" target="_blank">backbone</a> all the way to <a href="https://reactjs.org/" target="_blank">react</a> and <a href="https://vuejs.org/" target="_blank">vue</a>.
     </p>
+    <social-icons />
   </div>
 </template>
 
 <script>
+import SocialIcons from '@/components/SocialIcons';
 export default {
   name: 'HelloWorld',
+  components: {
+    'social-icons': SocialIcons
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
