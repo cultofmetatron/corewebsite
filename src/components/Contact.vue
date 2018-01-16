@@ -68,6 +68,11 @@ h1 {
   border-bottom: 1px solid black;
   font-size: 2em;
   padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 </style>
