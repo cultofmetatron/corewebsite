@@ -1,6 +1,9 @@
 <template>
   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-end">
+      <router-link to="/" class="navbar-item">
+        Home
+      </router-link>
       <div class="navbar-item">
         <div class="field is-grouped">
           <p class="control">
